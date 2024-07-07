@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    if (window.location.pathname === '/' || window.location.pathname.endsWith('/home.html')) {
-        document.body.classList.add('home');
+    if (window.location.pathname === '/' || window.location.pathname.endsWith('/index.html')) {
+        document.body.classList.add('index');
         setTimeout(function() {
             document.body.classList.add('fade-in');
         }, 10); // Small delay to ensure CSS is applied
