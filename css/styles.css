@@ -14,12 +14,12 @@ body, header, nav, main, footer, img, h1, h3, aside
 }
 
 /*Allows the website to fade in when loaded*/
-body.home{
+body.index{
   opacity: 0;
   transition: opacity 3s ease-in-out;
 }
 
-body.home.fade-in{
+body.index.fade-in{
   opacity: 1;
 }
 
