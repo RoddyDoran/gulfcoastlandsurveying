@@ -236,7 +236,7 @@ button{
     border-radius: 5px;
   }
 
-@media (min-width:768px){
+@media (min-width:780px){
   main{
     flex-direction:row;
   }
