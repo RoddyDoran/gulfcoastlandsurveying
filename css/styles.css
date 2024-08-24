@@ -240,6 +240,7 @@ button{
     padding: 10px;
   }
 }
+
 /* For tablets */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   /* Styles for screens between 601px and 768px */
@@ -248,6 +249,7 @@ button{
     padding: 15px;
   }
 }
+
 /* For desktops */
 @media only screen and (min-width: 769px) and (max-width: 1000px) {
   /* Styles for screens larger than 768px */
