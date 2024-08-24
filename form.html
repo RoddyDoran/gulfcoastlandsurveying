@@ -11,17 +11,6 @@
             <div class="Schedule-Container">
                 <form id="Schedule-form" action="/submit-survey" method="post">
                     <div class="Schedule-group">
-                        <center>
-                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd7HJC1OcAGIUXLrvSLGpHvxjUCYfdmv8&libraries=places"></script>
-                            <input id="pac-input" class="controls" type="text" placeholder="Enter a location">
-                            <div id="map"></div>
-                         <style>
-                            #map {
-                             height: 500px;
-                             width: 100%;
-                             }
-                         </style>
-                        </center>
                     </div>
                     <div class="Schedule-group">
                     <label for="Address">Address of Property to be Surveyed:</label>
@@ -62,4 +51,8 @@
                     </div>
                     <button type="submit">Submit</button>
                     </div>
+                    <form action="your-server-endpoint" method="post" enctype="multipart/form-data">
+                    <label for="fileUpload">Attach Document:</label>
+                    <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.doc,.docx,.jpg,.png">
+                    <input type="submit" value="Submit">
                     </form>
