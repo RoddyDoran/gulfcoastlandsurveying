@@ -1,238 +1,134 @@
-/*CSS Reset*/
-
-body, header, nav, main, footer, img, h1, h3, aside
-{
-  margin:0;
-  padding:0;
-  border:0
+*{
+    font-family: "Overpass", sans-serif;
 }
-
-.background-image{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/*Allows the website to fade in when loaded*/
-body.index{
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-}
-
-body.index.fade-in{
-  opacity: 1;
-}
-
-/*Styling the text on home page*/
-
-.overlay{
-    padding-top: 60px;
-    transform: translate(-50%, -50%);
-    color: black;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    text-align: center;
-}
-
-.overlay-list{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.overlay-list dt{
-  font-size: x-large;
-  margin: 10px 0;
-}
-
-.overlay-list dd{
-  font-size: medium;
-  margin: 10px 0;
-}
-
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: white;
-    list-style-type: none;
-    z-index: 100;
-    display: flex;
-  }
-
-  /*Style the short line on the services page*/
-  .short-line{
-    width: 400px;
-    height: 2px;
-    background-color: beige;
-    margin: 10px 0;
-  } 
-
-  /*Style/Format the buttons*/
-button{
-  border: 2.5px;
-  border-style: groove;
-  padding: 10px;
-  margin: 15px;
-  background-color: rgb(65, 105, 225);
-  color: white;
-}
-
-
-  button a:hover{
-    color: rgb(rgb(65, 105, 225));
-  }
-
-  .stack{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    gap: 10px;
+body{
+    height: 100vh;
+    width: auto;
+    display:flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-  }
-
-  .side-by-side{
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /*Format the navigation bar on home page*/
-  .navbar{
-    background-color: rgba(255, 247, 247, 0.664);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-  }
-
-  .topnav-container{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  .nav-list{
-    list-style: none;
-    display: flex;
+    background-color: hsl(216, 12%, 8%);
     margin: 0;
-    padding: 0;
-    margin-left: auto;
-  }
+}
+.container{
+    background-color:hsl(215, 16%, 15%);
+    /* height: 65vh; */
+    width: min(400px, calc(100% - 1em));
+    border-radius: 5vmin;
+    padding: 1em;
+    box-sizing: border-box;
 
-  .nav-page{
-    margin: 0 15px;
-  }
-
-  .nav-link{
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding: 10px 15px;
-    text-align: center;
-  }
-
-  .nav-link:hover{
-    background-color: rgb(65, 105, 225);
-    border-radius: 5px;
-  }
-
-  /*Middle Section of Home Page*/
-  section{
-    background-color: grey;
+}
+.star{
+    background-color: hsla(216, 12%, 54%, 0.096);
+    padding: 0.8em;
+    height: 1em;
+    border-radius: 50%;
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+h2{
     color: white;
-    align-content: center;
-  }
-
-  /*Style the footer of the webpage*/
-  footer{
-    background-color: grey;
-    color: white;
-    padding: 20px 0;
-  }
-
-  .footer-container {
+    font-size: 2rem;
+    margin-left: 1em;
+}
+p{
+    color:hsl(217, 12%, 63%);
+    font-size:1rem;
+   
+    margin-left: 2em;
+}
+form{
     display: flex;
-    padding: 20px;
-    justify-content: space-around;
-  }
+    gap:1.3em;
+    margin-left: 2em;
+    flex-wrap: wrap;
+    
+}
+.circle{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 54%, 0.11);
+    color: hsl(217, 12%, 63%);
+    text-align: center;
+    line-height: 3;
+    cursor: pointer;
 
-  .footer-section{
-    flex: 1;
-    margin: 10px;
-  }
-
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .footer-links ul li{
+}
+.circle:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+input{
+    background-color: hsl(25, 97%, 53%);
     color: white;
-    margin: 5px;
-  }
+    font-weight: 700;
+    border: none;
+    width: min(25em, calc(100% - 2em));
+    margin-top: 4em;
+    padding: 1em;
+    border-radius:5vmin;
+    margin-left: 2em;
+    font-family: "Overpass", sans-serif;
+    cursor: pointer;
+    
+}
+input:hover{
+    background-color: white;
+    color:hsl(25, 97%, 53%);
 
-  .footer-links ul li a:hover{
-    text-decoration: underline;
-  }
+} 
 
-  /*Style vertical lines in the footers*/
-  .vertical-line{
-    height: 100;
-    width: fit-content;
-    margin: 20px;
-  }
-
-  /*Style the contact page section*/
-  .contact-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .contact-item{
-    padding: 20px;
-    margin: 10px;
-  }
-
-  /*Style the Survey form*/
-  .Schedule-Container{
-    max-width: 1000px;
-    margin: auto;
-    padding: 0;
-  }
-
-  form{
-    padding: 20px;
-    border-radius: 2px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .Schedule-group{
-    margin-bottom: 10px;
-  }
-
-  .Schedule-group label{
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .Schedule-group input, .Schedule-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid grey;
-    border-radius: 5px;
-  }
-
-/* For mobile devices */
+/*Thank you section*/
+.tks{
+    background-color:hsl(215, 16%, 15%);
+    /* height: 65vh; */
+    width: min(400px, calc(100% - 1em));
+    border-radius: 5vmin;
+    padding: 1em;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.tks h2, .tks p {
+  margin-left: 0;
+}
+.cell{
+    /* margin-left: 6em; */
+    margin-top: 1em;
+    height: 8em;
+}
+.answer{
+    background-color: hsla(216, 12%, 54%, 0.11);
+    color: orange;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.5em;
+    border: none;
+    width: 15em;
+    margin-top: 2em;
+    border-radius:5vmin;
+    /* margin-left: 4em; */
+    font-family: "Overpass", sans-serif;
+    
+}
+.msg{
+    width: min(20em, calc(100% - 16px));
+    text-align: center;
+}
+.tku{
+    /* margin-left: 3em; */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.bottom-text {
+    margin-left: 0px;
+    text-align: center;
+}
 @media only screen and (max-width: 600px)  {
     h2 {
         margin-left: 0;
@@ -250,24 +146,4 @@ button{
         width: min(25em, 100%);
         margin-left: 0;
     }
-}
-
-/* For tablets */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  /* Styles for screens between 601px and 768px */
-  .container {
-    width: 90%;
-    padding: 15px;
-  }
-}
-
-/* For desktops */
-@media only screen and (min-width: 769px) and (max-width: 1000px) {
-  /* Styles for screens larger than 768px */
-  .container {
-    width: 100%;
-    padding: 20px;
-  }
-}
-
 }
