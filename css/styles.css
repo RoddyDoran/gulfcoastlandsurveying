@@ -251,7 +251,7 @@ button{
 }
 
 /* For desktops */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
   /* Styles for screens larger than 768px */
   .container {
     width: 80%;
