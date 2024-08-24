@@ -238,6 +238,28 @@ button{
   width: 100%;
   padding: 10px
 }
+  /* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+	border-radius: 25px;
 }
 
+.tab-desk {
+    display: none;
+}
+}
+
+/* Media Query for Tablet Viewport*/
+@media only screen and (min-width: 620px), print {
+  /*Tablet Viewport: Show tab-desk class, hide mobile class*/
+  .tab-desk{
+    display:block;
+  }
+  .mobile{
+    display: none;
+  }
+
+  *Media Query for Desktop Viewport*/
+@media only screen and (min-width: 1000px), print {
+}
 }
