@@ -233,6 +233,11 @@ button{
   }
 
 /* For mobile devices */
-@media (max-width: 600px)
+@media (max-width: 600px){
+.topnav-container{
+  width: 100%;
+  padding: 10px
+}
+}
 
 }
