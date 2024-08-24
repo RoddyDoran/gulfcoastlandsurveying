@@ -159,10 +159,6 @@ button{
     padding: 20px 0;
   }
 
-  footer :hover{
-    color: rgb(65, 105, 225);
-  }
-
   .footer-container {
     display: flex;
     padding: 20px;
