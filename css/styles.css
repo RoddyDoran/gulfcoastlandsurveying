@@ -154,7 +154,7 @@ button{
 
   /*Style the footer of the webpage*/
   footer{
-    background-color: rgb(46,45,45);
+    background-color: white;
     color: white;
     padding: 20px 0;
   }
@@ -236,8 +236,31 @@ button{
     border-radius: 5px;
   }
 
-@media (min-width:780px){
-  main{
-    flex-direction:row;
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Styles for screens smaller than 600px */
+  .container {
+    width: 100%;
+    padding: 10px;
   }
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* Styles for screens between 601px and 768px */
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+/* For desktops */
+@media only screen and (min-width: 769px) {
+  /* Styles for screens larger than 768px */
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
 }
