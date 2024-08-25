@@ -1,6 +1,6 @@
 /*CSS Reset*/
 
-body, header, nav, main, footer, img, h1, h3, aside
+body, header, nav, styles, footer, img, h1, h3, aside
 {
   margin:0;
   padding:0;
@@ -28,8 +28,8 @@ body.index.fade-in{
 }
 
 .wrapper-styles {
-	width: 1200px;
-	padding: 100px 0;
+	width: 1000px;
+	padding: 10px 0;
 	margin: 0 auto;
 }
 /*Styling the text on home page*/
@@ -261,7 +261,7 @@ button{
   }
 
   *Media Query for Desktop Viewport*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 	.wrapper-styles {
 		width: 100%;
 		margin: 0 auto;
