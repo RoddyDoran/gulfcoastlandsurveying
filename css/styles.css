@@ -265,5 +265,9 @@ button{
 
   *Media Query for Desktop Viewport*/
 @media only screen and (min-width: 1000px), print {
+	#wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
 }
 }
