@@ -237,8 +237,8 @@ button{
   }
 
 /* For mobile devices */
-@media (max-width: 600px){
-.topnav-container{
+@media (max-width: 600px) {
+.wrapper-main {
   width: 100%;
   padding: 10px
 }
