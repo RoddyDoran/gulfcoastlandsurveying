@@ -237,8 +237,8 @@ button{
   }
 
 /* For mobile devices */
-@media (max-width: 600px){
-.topnav-container{
+@media (max-width: 600px) {
+.topnav-container {
   width: 100%;
   padding: 10px
 }
@@ -255,9 +255,9 @@ button{
     display: none;
   }
 
-  *Media Query for Desktop Viewport*/
-@media only screen and (min-width: 100%), print {
-	#wrapper{
+  /*Media Query for Desktop Viewport*/
+@media only screen and (min-width: 100%) {
+	.wrapper-main {
 		width: 100%;
 		margin: 0 auto;
 	}
