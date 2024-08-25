@@ -7,6 +7,10 @@ body, header, nav, main, footer, img, h1, h3, aside
   border:0
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .background-image{
     background-size: cover;
     background-position: center;
